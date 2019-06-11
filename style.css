@@ -1,52 +1,54 @@
 
 .column-template {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  height: 100vh;
-  grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+    height: 100vh;
+    grid-gap: 10px;
 }
 
 aside {
-  background-color: #B9111E;
-  border-radius: 5px;
+    background-color: #17C37B;
+    border-radius: 5px;
 }
 
 .aside-title {
-  font-size: xx-large;
-  font-family: Helvetica, Arial, sans-serif;
-  color: white;
-  text-align: center;
-  margin: 10px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid white;
+    font-size: xx-large;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
 }
 
 .topics-list {
-  font-size: x-large;
-  font-family: sans-serif;
-  text-align: center;
+    font-size: x-large;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 ul {
-  list-style: none;
-  padding-inline-start: 0;
+    list-style: none;
+    padding-inline-start: 0;
 }
 
 ul > * {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 ul > li {
     color: white;
+    cursor: pointer;
 }
 
-ul >li:hover {
+ul > li:hover {
     font-size: xx-large;
+    text-shadow: 2px 2px 5px white;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
     grid-auto-flow: column;
 }
@@ -54,23 +56,65 @@ ul >li:hover {
 .grid-container > p {
     padding: 15px;
     border-radius: 5px;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     color: white;
+    font-family: sans-serif;
 }
 
 .main-container {
     padding: 15px;
 }
 
-.grid-col1 {
-    background-color: #005E2A;
+.column-flexbox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
-.grid-col2 {
-    background-color: #058F96;
+.column-flexbox > span {
+    font-size: x-large;
+    text-align: center;
+    margin: 10px;
+    border-bottom: 2px solid white;
 }
 
-.grid-col3 {
-    background-color: #DC0502;
-    
+.column-flexbox > span:hover {
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px white;
+}
+
+.grid-col-pattern1 {
+    background-color: #E54B4B;
+}
+
+.grid-col-pattern2 {
+    background-color: #D38CAD;
+}
+
+.grid-col-pattern3 {
+    background-color: #DB3951;
+}
+
+.grid-col-pattern4 {
+    background-color: #E10000;
+}
+
+.grid-col-pattern5 {
+    background-color: #F30E5C;
+}
+
+.grid-col-pattern6 {
+    background-color: #FF6337;
+}
+
+.grid-col-pattern7 {
+    background-color: #FD0054;
+}
+
+.grid-col-pattern8 {
+    background-color: #00818A;
+}
+
+.grid-col-pattern9 {
+    background-color: #0077cc;
 }
