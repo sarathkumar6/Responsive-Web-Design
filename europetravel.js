@@ -21,7 +21,9 @@ $(document).ready(function () {
         getParis = $('#paris'),
         getRome = $('#rome'),
         getSantorini = $('#santorini'),
-        getVienna = $('#vienna');
+        getVienna = $('#vienna'),
+        getMisc = $('#misc'),
+        getMiscMenu = $('#main-menu');
 
 
     $(getBarcelona).on('click', (e) => scrollIntoView(e, places.barcelona));
@@ -39,7 +41,11 @@ $(document).ready(function () {
     $(getSantorini).on('click', (e) => scrollIntoView(e, places.santorini));
 
     $(getVienna).on('click', (e) => scrollIntoView(e, places.vienna));
-
+    
+    $(getMisc).on('click', (e) => {
+        window.location = '/misc.html';
+    });
+    
     /**
      * @description Scrolls into the respective view smoothly
      * @param ele element clicked
