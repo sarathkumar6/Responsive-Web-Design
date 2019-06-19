@@ -2,6 +2,10 @@
 :root {
     --common-color: white;
 }
+
+body{
+    margin: 0 8px 0 0;
+}
 .column-template {
     display: grid;
     grid-template-columns: 1fr 4.5fr;
@@ -10,8 +14,11 @@
 }
 
 aside {
-    background-color: #17C37B;
-    border-radius: 5px;
+    background-color: #36c99a;
+}
+
+main {
+    margin-top: 8px;
 }
 
 .aside-title {
@@ -46,7 +53,7 @@ ul > li {
 
 ul > li:hover {
     font-size: xx-large;
-    text-shadow: 2px 2px 5px var(--common-color);;
+    /*text-shadow: 2px 2px 5px var(--common-color);;*/
 }
 
 .grid-container {
@@ -83,7 +90,7 @@ ul > li:hover {
 
 .column-flexbox > span:hover {
     font-size: xx-large;
-    text-shadow: 2px 2px 2px white;
+    /*text-shadow: 2px 2px 2px white;*/
 }
 
 .grid-col-pattern1 {
@@ -91,7 +98,7 @@ ul > li:hover {
 }
 
 .grid-col-pattern2 {
-    background-color: #D38CAD;
+    background-color: #545aab;
 }
 
 .grid-col-pattern3 {
@@ -103,7 +110,7 @@ ul > li:hover {
 }
 
 .grid-col-pattern5 {
-    background-color: #F30E5C;
+    background-color: #bd9142;
 }
 
 .grid-col-pattern6 {
@@ -111,7 +118,7 @@ ul > li:hover {
 }
 
 .grid-col-pattern7 {
-    background-color: #FD0054;
+    background-color: #e64219;
 }
 
 .grid-col-pattern8 {
