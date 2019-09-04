@@ -23,8 +23,10 @@ $(document).ready(function () {
         getSantorini = $('#santorini'),
         getVienna = $('#vienna'),
         getMisc = $('#misc'),
-        getMiscMenu = $('#main-menu');
-
+        getMiscMenu = $('#main-menu'),
+        getSong = $('#song');
+    
+    console.log(getSong);
 
     $(getBarcelona).on('click', (e) => scrollIntoView(e, places.barcelona));
 
@@ -46,6 +48,7 @@ $(document).ready(function () {
         window.location = '/misc.html';
     });
     
+    $(getSong).on('click', (e) => printSinger());
     /**
      * @description Scrolls into the respective view smoothly
      * @param ele element clicked
@@ -55,5 +58,20 @@ $(document).ready(function () {
     function scrollIntoView(ele, id) {
         ele.preventDefault();
         return $(id).get(0).scrollIntoView(scrollBehavior);
+    }
+    
+class song {
+    constructor (){
+        this.name = 'Hello';
+    }
+    singer() {
+        console.log(`${this.name} sung by Jager`);
+    }
+}
+
+    const cheapThrills = new song();
+    
+    var printSinger = function printSinger() {
+        console.log(cheapThrills.singer());
     }
 });
